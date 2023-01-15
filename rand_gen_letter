@@ -1,0 +1,14 @@
+ let game= prompt("Enter S,W or G").toLowerCase()
+
+ confirm(`Are you sure you want to go with ${game}`)
+
+let letters = ['s','w','g'];
+
+let randnum = Math.floor(Math.random()*letters.length)
+let compgen = letters[randnum]
+
+ if (game ===compgen){
+    alert("You have won")
+ }else{
+     alert("You have not won the computer chose"+ " " + compgen)
+}
